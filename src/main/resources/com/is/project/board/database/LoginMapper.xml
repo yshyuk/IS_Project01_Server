@@ -4,7 +4,7 @@
 
 	<select id="Login" >
 		SELECT *
-		FROM CUSTOMER_TBL
+		FROM USER_TBL
 		WHERE
 		ID = #{id}
 		AND
@@ -12,6 +12,13 @@
 	
 	</select> 
 
+	<select id= "isUser">
+		SELECT *
+		FROM
+		USER_TBL
+		WHERE
+		ID = #{user_id}
+	</select>
 	<insert id="signUp">
 	
 	</insert>

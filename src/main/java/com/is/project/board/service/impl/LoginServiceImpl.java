@@ -17,6 +17,11 @@ public class LoginServiceImpl implements LoginService{
 			return true;
 		else
 			return false;
-	}        
+	}
+	
+	@Override
+	public boolean isUser(String user_id) {
+		return loginMapper.isUser(user_id)>0 ? true : false;
+	}
 
 }

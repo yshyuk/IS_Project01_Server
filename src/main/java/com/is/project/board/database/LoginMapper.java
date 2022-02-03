@@ -4,5 +4,7 @@ import com.is.project.board.model.UserInfo;
 
 public interface LoginMapper {
 
-	public boolean Login(UserInfo userInfo); 
+	public boolean Login(UserInfo userInfo);
+
+	public int isUser(String user_id); 
 }
